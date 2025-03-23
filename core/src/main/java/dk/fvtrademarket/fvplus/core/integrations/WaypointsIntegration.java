@@ -27,9 +27,9 @@ public class WaypointsIntegration implements AddonIntegration {
         Color.ORANGE,
         WaypointType.SERVER_SESSION,
         new FloatVector3(
-            event.getRequestedLocation().getX(),
-            event.getRequestedLocation().getY(),
-            event.getRequestedLocation().getZ()
+            event.getRequestedLocation().x(),
+            event.getRequestedLocation().y(),
+            event.getRequestedLocation().z()
         ),
         true,
         waypointService.actualWorld(),

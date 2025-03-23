@@ -1,7 +1,7 @@
 package dk.fvtrademarket.fvplus.api.housing;
 
 import dk.fvtrademarket.fvplus.api.enums.FreakyVilleServer;
-import dk.fvtrademarket.fvplus.api.misc.Location;
+import dk.fvtrademarket.fvplus.api.util.BlockVector3;
 import net.labymod.api.util.Pair;
 
 public interface LivingArea {
@@ -38,5 +38,5 @@ public interface LivingArea {
    * Beskriver minecraft lokationen af området.
    * @return Minecraft lokationen af området
    */
-  Location getLocation();
+  BlockVector3 getBlockPoint();
 }

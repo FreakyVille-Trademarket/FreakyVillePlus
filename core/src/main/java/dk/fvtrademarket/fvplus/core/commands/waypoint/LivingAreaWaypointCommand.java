@@ -39,7 +39,7 @@ public class LivingAreaWaypointCommand extends Command {
           NamedTextColor.RED));
       return true;
     }
-    Laby.fireEvent(new CreateLocationWaypointEvent(livingArea.get().getDescription(), livingArea.get().getLocation()));
+    Laby.fireEvent(new CreateLocationWaypointEvent(livingArea.get().getDescription(), livingArea.get().getBlockPoint()));
     displayMessage(Component.translatable("fvplus.server.prison.cell.commands.waypoint.success",
       NamedTextColor.GREEN));
     return true;
